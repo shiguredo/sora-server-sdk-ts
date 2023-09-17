@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "sora-server-sdk-ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fmt": "prettier --write '**/*.{ts,mts,js,mjs,html,css,json,md}'"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "6.7.0",
+    "eslint": "8.49.0",
+    "eslint-config-typescript": "3.0.0",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
+  },
+  "packageManager": "pnpm@8.7.5",
+  "engines": {
+    "node": ">=18.17"
+  }
+}
