@@ -3,6 +3,7 @@
   "name": "sora-server-sdk-ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .ts ./types",
     "fmt": "prettier --write '**/*.{ts,mts,js,mjs,html,css,json,md}'"
   },
   "devDependencies": {
