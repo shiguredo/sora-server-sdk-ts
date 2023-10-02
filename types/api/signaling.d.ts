@@ -17,5 +17,21 @@ type DisconnectConnectionRequest = {
 
 type DisconnectChannelByRoleRequest = {
   channel_id: string
-  role: string
+  role: Role
+}
+
+type ListChannelConnectionsRequest = {
+  channel_id: string
+}
+
+type ChannelConnection = {
+  channel_id: string
+  client_id: string
+  created_time: number
+  bundle_id: string
+  connection_id: string
+  role: Role
+  simulcast: boolean
+  spotlight: boolean
+  multistream: boolean
 }
