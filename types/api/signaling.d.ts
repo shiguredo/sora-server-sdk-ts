@@ -1,30 +1,47 @@
-type DisconnectChannelRequest = {
+type DisconnectChannelParams = {
   channel_id: string
   reason: object
 }
 
-type DisconnectClientRequest = {
+type DisconnectChannel = {
+  channel_id: string
+}
+
+type DisconnectClientParams = {
   channel_id: string
   client_id: string
   reason?: object
 }
 
-type DisconnectConnectionRequest = {
+type DisconnectClient = {
+  channel_id: string
+  client_id: string
+}
+
+type DisconnectConnectionParams = {
   channel_id: string
   connection_id: string
   reason?: object
 }
 
-type DisconnectChannelByRoleRequest = {
+type DisconnectConnection = {
+  channel_id: string
+  connection_id: string
+}
+
+type DisconnectChannelByRoleParams = {
   channel_id: string
   role: Role
 }
 
-type ListChannelConnectionsRequest = {
+type DisconnectChannelByRole = {
   channel_id: string
+  role: Role
 }
 
-type ChannelConnection = {
+type Connection = {
+  audio: Audio
+  audio: Video
   channel_id: string
   client_id: string
   created_time: number
@@ -34,4 +51,8 @@ type ChannelConnection = {
   simulcast: boolean
   spotlight: boolean
   multistream: boolean
+}
+
+type ListChannelConnectionsParams = {
+  channel_id: string
 }

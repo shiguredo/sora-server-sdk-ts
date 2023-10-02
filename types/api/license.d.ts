@@ -1,4 +1,4 @@
-type GetLicenseResponse = {
+type GetLicense = {
   expired_at: string
   max_connections: number
   product_name: string
@@ -6,7 +6,7 @@ type GetLicenseResponse = {
   type: string
 }
 
-type UpdateLicenseResponse = {
-  new_license: GetLicenseResponse
-  old_license: GetLicenseResponse
+type UpdateLicense = {
+  new_license: GetLicense
+  old_license: GetLicense
 }
