@@ -1,3 +1,2 @@
-// webhook
-export * from './types/api/license'
-export * from './types/api/signaling'
+export * from './license'
+export * from './signaling'

@@ -3,7 +3,7 @@
   "type": "module",
   "name": "sora-server-sdk-ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "lint": "eslint --ext .ts ./types",
     "fmt": "prettier --write '**/*.{ts,mts,js,mjs,html,css,json,md}'"
   },
@@ -12,7 +12,8 @@
     "eslint": "8.50.0",
     "eslint-config-typescript": "3.0.0",
     "prettier": "3.0.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "vitest": "0.34.6"
   },
   "packageManager": "pnpm@8.8.0",
   "engines": {

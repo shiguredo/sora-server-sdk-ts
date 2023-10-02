@@ -1,7 +1,6 @@
-// webhook
-export * from './types/webhook/webhook'
-export * from './types/webhook/auth_webhook'
-export * from './types/webhook/session_webhook'
-export * from './types/webhook/event_webhook'
-export * from './types/webhook/event_spotlight_webhook'
-export * from './types/webhook/event_recording_webhook'
+export * from './webhook'
+export * from './auth_webhook'
+export * from './session_webhook'
+export * from './event_webhook'
+export * from './event_spotlight_webhook'
+export * from './event_recording_webhook'

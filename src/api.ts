@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 
-export class Api {
+export default class Api {
   // https://sora.example.com/api
   private endpoint: string
 
