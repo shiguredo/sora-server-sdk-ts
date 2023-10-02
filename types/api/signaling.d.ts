@@ -1,3 +1,17 @@
+type Connection = {
+  audio: Audio
+  audio: Video
+  channel_id: string
+  client_id: string
+  created_time: number
+  bundle_id: string
+  connection_id: string
+  role: Role
+  simulcast: boolean
+  spotlight: boolean
+  multistream: boolean
+}
+
 type DisconnectChannelParams = {
   channel_id: string
   reason: object
@@ -37,20 +51,6 @@ type DisconnectChannelByRoleParams = {
 type DisconnectChannelByRole = {
   channel_id: string
   role: Role
-}
-
-type Connection = {
-  audio: Audio
-  audio: Video
-  channel_id: string
-  client_id: string
-  created_time: number
-  bundle_id: string
-  connection_id: string
-  role: Role
-  simulcast: boolean
-  spotlight: boolean
-  multistream: boolean
 }
 
 type ListChannelConnectionsParams = {
