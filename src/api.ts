@@ -20,7 +20,7 @@ export default class Api {
     })
 
     if (!response.ok) {
-      throw new Error('')
+      throw new Error('Unexpected response status')
     }
 
     const data = await response.json()
